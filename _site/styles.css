@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(assets/Comfortaa.ttf);
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vh;
+    margin: 0;
+    font-family: Comfortaa, sans;
+    font-variation-settings: 'wght' 700;
+    /* background: #222; */
+}
+
+body>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-container {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.title {
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 6px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    transition: box-shadow .5s;
+}
+
+.link:hover {
+    box-shadow: 0 4px 10px 2px black;
+}
+
+.link>a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.link>img {
+    position: absolute;
+    filter: contrast(0%) brightness(200%);
+    top: 10px;
+    left: 10px;
+    height: 50px;
+}
+
+.link.bright>img {
+    filter: brightness(0%);
+}
+
+.link>span {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.link.bright>span {
+    color: #000;
+}

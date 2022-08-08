@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JOYCEANNA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img src="assets/joyceanna.jpg">
+    <div class="content-container">
+        <span class="title">JOYCEANNA</span>
+        <div class="links">
+            {% for link in site.data.links %}
+            <div class="link{% if link.bright %} bright{% endif %}" style="background: {{ link.color }}">
+                <img src="assets/img/{{ link.id }}.svg">
+                <a href="{{ link.url }}"></a>
+                <span>{{ link.name }}</span>
+            </div>
+            {% endfor %}
+            </ul>
+        </div>
+</body>
+
+</html>

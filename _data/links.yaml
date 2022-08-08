@@ -1,0 +1,20 @@
+- id: spotify
+  color: "#1ed760"
+  bright: true
+  url: https://open.spotify.com/artist/435Bm5nkZ3ZwVsXtbexIMK
+  name: Spotify
+
+- id: apple
+  color: "#fa243c"
+  url: https://music.apple.com/us/artist/joyceanna/1635576644
+  name: Apple Music
+
+- id: youtubemusic
+  color: "#ff0000"
+  url: https://music.youtube.com/channel/UCCrv4dboPCaaajLlkdmQgKw
+  name: YouTube Music
+
+- id: instagram
+  color: "#c13584"
+  url: https://www.instagram.com/joyceanna.music/
+  name: "@joyceanna.music"
