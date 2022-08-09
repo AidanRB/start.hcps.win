@@ -3,8 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- made by github.com/AidanRB -->
+
 <head>
     <title>JOYCEANNA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css?{{ 'now' | date: '%s' }}">
 </head>
 
@@ -26,6 +30,15 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        const documentHeight = () => {
+            const doc = document.documentElement
+            doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+        }
+        window.addEventListener('resize', documentHeight)
+        documentHeight()
+    </script>
 </body>
 
 </html>

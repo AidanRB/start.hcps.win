@@ -3,19 +3,29 @@
     src: url(assets/Comfortaa.ttf);
 }
 
+:root {
+    --doc-height: 100%;
+}
+
+html {
+    width: 100%;
+    height: var(--doc-height);
+}
+
 body {
     display: grid;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: var(--doc-height);
     margin: 0;
     font-family: Comfortaa, sans;
     font-variation-settings: 'wght' 700;
     background: #222;
+    overflow: hidden;
 }
 
 .background {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: var(--doc-height);
     object-fit: cover;
 }
 
@@ -107,4 +117,28 @@ body {
 
 .link.bright>span {
     color: #000;
+}
+
+@media (orientation: portrait) {
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+@media (max-height: 500px) {
+    .content-container {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+@media ((max-width: 350px)) {
+    .content-container {
+        transform: translate(-50%, -50%) scale(0.6);
+    }
 }
