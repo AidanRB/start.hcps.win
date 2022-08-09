@@ -9,9 +9,12 @@
 </head>
 
 <body>
-    <img src="assets/joyceanna.jpg">
+    <img src="assets/flowers.jpg" class="background">
     <div class="content-container">
-        <span class="title">JOYCEANNA</span>
+        <div class="header">
+            <img src="assets/joyceanna_crop.jpg" class="profile">
+            <span class="title">JOYCEANNA</span>
+        </div>
         <div class="links">
             {% for link in site.data.links %}
             <div class="link{% if link.bright %} bright{% endif %}" style="background: {{ link.color }}">
@@ -22,6 +25,7 @@
             {% endfor %}
             </ul>
         </div>
+    </div>
 </body>
 
 </html>
