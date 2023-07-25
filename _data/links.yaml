@@ -1,20 +1,31 @@
-- id: spotify
-  color: "#1ed760"
-  bright: true
-  url: https://open.spotify.com/artist/435Bm5nkZ3ZwVsXtbexIMK
-  name: Spotify
+- name: Socials
+  links:
+  - id: instagram
+    color: "#c13584"
+    url: https://www.instagram.com/joyceanna.music/
+    name: "@joyceanna.music"
 
-- id: apple
-  color: "#fa243c"
-  url: https://music.apple.com/us/artist/joyceanna/1635576644
-  name: Apple Music
+- name: Music
+  links:
+  - id: spotify
+    color: "#1ed760"
+    bright: true
+    url: https://open.spotify.com/artist/435Bm5nkZ3ZwVsXtbexIMK
+    name: Spotify
 
-- id: youtubemusic
-  color: "#ff0000"
-  url: https://music.youtube.com/channel/UCCrv4dboPCaaajLlkdmQgKw
-  name: YouTube Music
+  - id: apple
+    color: "#fa243c"
+    url: https://music.apple.com/us/artist/joyceanna/1635576644
+    name: Apple Music
 
-- id: instagram
-  color: "#c13584"
-  url: https://www.instagram.com/joyceanna.music/
-  name: "@joyceanna.music"
+  - id: youtubemusic
+    color: "#ff0000"
+    url: https://music.youtube.com/channel/UCCrv4dboPCaaajLlkdmQgKw
+    name: YouTube Music
+
+  - id: amazon
+    color: "#25d1da"
+    bright: true
+    url: https://music.amazon.ca/artists/B0B7JTYGCY/joyceanna
+    name: Amazon Music
+
