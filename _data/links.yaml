@@ -1,31 +1,34 @@
-- name: Socials
+- name: Management
   links:
-  - id: instagram
-    color: "#c13584"
-    url: https://www.instagram.com/joyceanna.music/
-    name: "@joyceanna.music"
+  - id: toem
+    color: "#00457c"
+    url: https://toem.hcps.win/
+    name: "Theopenem"
 
-- name: Music
+  - id: toem-docs
+    color: "#2094f3"
+    url: https://docs.toem.hcps.win/
+    name: "HCPS Toem docs"
+
+  - id: gitea
+    color: "#73a952"
+    url: https://gitea.hcps.win/
+    name: "Gitea"
+
+- name: Utilities
   links:
-  - id: spotify
-    color: "#1ed760"
+  - id: tools
+    color: "#ffffff"
     bright: true
-    url: https://open.spotify.com/artist/435Bm5nkZ3ZwVsXtbexIMK
-    name: Spotify
+    url: https://tools.hcps.win/
+    name: Endpoint Utilities
 
-  - id: apple
-    color: "#fa243c"
-    url: https://music.apple.com/us/artist/joyceanna/1635576644
-    name: Apple Music
+  - id: snowman
+    color: "#0000fe"
+    url: https://snowman.hcps.win/
+    name: CG-100
 
-  - id: youtubemusic
-    color: "#ff0000"
-    url: https://music.youtube.com/channel/UCCrv4dboPCaaajLlkdmQgKw
-    name: YouTube Music
-
-  - id: amazon
-    color: "#25d1da"
-    bright: true
-    url: https://music.amazon.ca/artists/B0B7JTYGCY/joyceanna
-    name: Amazon Music
-
+  - id: element
+    color: "#0dbd8b"
+    url: https://element.hcps.win/
+    name: Element
