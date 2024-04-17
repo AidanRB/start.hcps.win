@@ -1,0 +1,127 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start.hcps.win</title>
+    <link href="Content/css.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top custom-nav-lime">
+        <div class="container">
+            <img src="Content/Images/header.png" class="img-responsive margin-auto" alt="HCPS" />
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        <!-- Search Google -->
+        <div class="goog panel panel-default">
+            <div class="panel-body">
+                <form method="GET" action="https://www.google.com/search">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input type="hidden" name="oe" value="UTF-8">
+                    <div class="row">
+                        <div class="col-xs-3 text-center">
+                            <a href="https://www.google.com/">
+                                <img src="Content/Images/Google_logo.svg" alt="Google"
+                                    class="googleimage img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            <input type="text" name="q" id="q" maxlength="255" value=""
+                                class="form-control margin-auto width100">
+                        </div>
+                        <div class="col-xs-3 text-center">
+                            <input type="submit" name="btnG" value="Search" class="btn btn-primary margin-auto">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Search Google -->
+        <hr />
+
+        <p class="margion10 text-center">
+            <a href="https://start.hcps.org/resetpassword/"><i class="fa fa-key"></i> Reset My Password</a>
+        </p>
+
+        <div class="alert alert-success">
+            <i class="fa fa-check-circle"></i> Canvas and Office 365/Microsoft Teams Operating Normally
+        </div>
+
+        <div class="alert alert-warning">
+            <i class="fa fa-question-circle"></i> Not seeing your <strong>staff tiles</strong>? Try <a
+                href="http://start.hcps.org/">clicking here</a>.
+        </div>
+
+        <div class="text-center" id="links">
+
+            {% for tile in site.data.tiles %}
+
+            <a href="{{ tile.url }}" class="appicon hvr-underline-from-center hvr-shadow clicklink"
+                style="background-image: url('Content/Images/apps/{{ tile.img }}')" alt="{{ tile.alt }}"></a>
+
+            {% endfor %}
+
+        </div>
+
+        <hr />
+        <div class="panel panel-danger panel-disclaimer">
+            <div class="panel-heading cursorpoint" data-toggle="collapse" data-target="#collapseOne">
+                <h4 class="panel-title">
+
+                    <i class="fa fa-exclamation-circle"></i> Click to View Disclaimer
+
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>
+                        Access to the Harford County Public Schools' network is restricted to authorized
+                        users only. Use of this system is subject to the Employee and Student Acceptable
+                        Use Policies (AUPs), and by accessing this system you agree that the USERNAME and
+                        PASSWORD issued to you shall not be used by any other individual and shall remain
+                        confidential information. Use of this system also indicates you acknowledge your
+                        online activities may be monitored and recorded.
+                    </p>
+                    <p>
+                        In the course of monitoring, individuals found to have accessed the system in excess
+                        of their authority or otherwise improperly, may be subject to disciplinary action
+                        and/or dismissal, including civil or criminal prosecution. In the event that criminal
+                        activity is discovered, system personnel may provide evidence to law enforcement
+                        officials. By accessing this system you consent to abide by all Harford County Public
+                        Schools' Information Security policies and procedures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <footer class="text-center">
+            <img src="Content/Images/HCPS_LogoLeafCircle_color.png" alt="HCPS" /><br />
+            &copy; 2024 - Hmmmmmmmmmm
+
+            <p class="mt-3 text-center">
+                <a href="https://passwordreset.microsoftonline.com/"><i class="fa fa-key"></i> Reset My Password</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="bundles/jquery.js"></script>
+
+    <script src="bundles/bootstrap.js"></script>
+
+</body>
+
+</html>
