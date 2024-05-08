@@ -2,15 +2,15 @@
   img: tools.png
   url: https://tools.hcps.win/
 
-- alt: "Theopenem"
+- alt: Theopenem
   img: toem.png
   url: https://toem.hcps.win/
 
-- alt: "HCPS Toem docs"
-  img: toem-docs.png
-  url: https://docs.toem.hcps.win/
+- alt: Bookstack
+  img: bookstack.png
+  url: https://bookstack.hcps.win/
 
-- alt: "Gitea"
+- alt: Gitea
   img: gitea.svg
   url: https://gitea.hcps.win/
 
@@ -21,7 +21,3 @@
 - alt: Element
   img: element.svg
   url: https://element.hcps.win/
-
-- alt: Bookstack
-  img: bookstack.png
-  url: https://bookstack.hcps.win/
