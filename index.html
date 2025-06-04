@@ -1,49 +1,76 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- made by github.com/AidanRB -->
-
 <head>
-    <title>start.hcps.win</title>
-    <meta charset="utf-8">
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?{{ 'now' | date: '%s' }}">
-    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>start.hcps.win</title>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/solid.css">
 </head>
 
 <body>
-    <img src="assets/background.jpg" class="background">
-    <div class="content-container">
-        <div class="header">
-            <img src="assets/windows.jpg" class="profile">
-            <span class="title">RESOURCES</span>
-        </div>
-        <div class="tree">
-            {% for section in site.data.links %}
-            <div class="section"><span>{{ section.name }}</span></div>
-            <div class="links">
-                {% for link in section.links %}
-                <div class="link{% if link.bright %} bright{% endif %}" style="background: {{ link.color }}">
-                    <img src="assets/img/{{ link.id }}.svg">
-                    <a href="{{ link.url }}"></a>
-                    <span>{{ link.name }}</span>
+    <div class="header"></div>
+
+    <div class="body-content">
+        <div class="panel google">
+            <form action="https://www.google.com/search" method="get">
+                <div class="quarter">
+                    <a href="https://www.google.com/">
+                        <img src="assets/img/google.svg" alt="Google">
+                    </a>
                 </div>
-                {% endfor %}
-            </div>
+
+                <div class="half">
+                    <input type="text" name="q" id="q" maxlength="255" value="">
+                </div>
+
+                <div class="quarter center">
+                    <input type="submit" name="btnG" value="Search" class="button">
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <div>
+            <a href="https://start.hcps.org/resetpassword/"><i class="fa-solid fa-key"></i> Reset My Password</a>
+        </div>
+
+        <div class="panel alert green">
+            <i class="fa fa-check-circle"></i> Canvas and Office 365/Microsoft Teams Operating Normally
+        </div>
+
+        <div class="panel alert yellow">
+            <i class="fa fa-question-circle"></i> Not seeing your <strong>staff tiles</strong>? Try <a
+                href="https://start.hcps.org/">clicking here</a>.
+        </div>
+
+        <div class="tiles">
+            {% for tile in tiles %}
+            <a href="{{ tile.url }}" class="tile" style="background-image: url('assets/img/apps/{{ tile.img }}')" title="{{ tile.alt }}"></a>
             {% endfor %}
         </div>
-    </div>
 
-    <script>
-        const documentHeight = () => {
-            const doc = document.documentElement
-            doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-        }
-        window.addEventListener('resize', documentHeight)
-        documentHeight()
-    </script>
+        <hr>
+
+        <div class="panel alert red">
+            <i class="fa fa-exclamation-circle"></i> Click to View Disclaimer
+        </div>
+
+        <hr>
+
+        <img src="/assets/img/HCPS_LogoLeafCircle_color.png" alt="" srcset="">
+        <p>
+        © 2025 - <a href="https://github.com/AidanRB/start.hcps.win">me</a>
+        </p>
+
+        <div>
+            <a href="https://start.hcps.org/resetpassword/"><i class="fa-solid fa-key"></i> Reset My Password</a>
+        </div>
+    </div>
 </body>
 
 </html>

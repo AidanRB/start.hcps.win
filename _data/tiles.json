@@ -1,0 +1,51 @@
+[
+  {
+    "alt": "Endpoint Utilities",
+    "img": "tools.png",
+    "url": "https://tools.hcps.win/"
+  },
+  {
+    "alt": "Theopenem",
+    "img": "toem.png",
+    "url": "https://toem.hcps.org/",
+    "status": "graduated"
+  },
+  {
+    "alt": "MeshCentral",
+    "img": "meshcentral.png",
+    "url": "https://meshcentral.hcps.win/"
+  },
+  {
+    "alt": "Bookstack",
+    "img": "bookstack.png",
+    "url": "https://bookstack.hcps.org/",
+    "status": "graduated"
+  },
+  {
+    "alt": "Grafana",
+    "img": "grafana.png",
+    "url": "https://grafana.hcps.org/",
+    "status": "graduated"
+  },
+  {
+    "alt": "Gitea",
+    "img": "gitea.svg",
+    "url": "https://gitea.hcps.win/"
+  },
+  {
+    "alt": "CG-100",
+    "img": "snowman.png",
+    "url": "https://snowman.hcps.win/"
+  },
+  {
+    "alt": "toem-store",
+    "img": "store.png",
+    "url": "http://jzkv4y2.hcps.k12.local:5050/"
+  },
+  {
+    "alt": "Element",
+    "img": "element.svg",
+    "url": "https://element.hcps.win/",
+    "status": "killed"
+  }
+]
