@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>start.hcps.win</title>
+    <link rel="shortcut icon" href="/assets/img/hcps_small.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/custom.css">
     <link rel="stylesheet" href="/assets/css/fontawesome.css">
     <link rel="stylesheet" href="/assets/css/solid.css">
@@ -50,7 +51,7 @@
 
         <div class="tiles">
             {% for tile in tiles %}
-            <a href="{{ tile.url }}" class="tile" style="background-image: url('assets/img/apps/{{ tile.img }}')" title="{{ tile.alt }}"></a>
+            <a href="{{ tile.url }}" class="tile" style="background-image: url('assets/img/tiles/{{ tile.img }}')" title="{{ tile.alt }}"></a>
             {% endfor %}
         </div>
 
@@ -62,7 +63,7 @@
 
         <hr>
 
-        <img src="/assets/img/HCPS_LogoLeafCircle_color.png" alt="" srcset="">
+        <img src="/assets/img/hcps_small.png" alt="" srcset="">
         <p>
         © 2025 - <a href="https://github.com/AidanRB/start.hcps.win">me</a>
         </p>
