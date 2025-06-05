@@ -58,6 +58,13 @@
     "date": "2024-09-23"
   },
   {
+    "alt": "Vaultwarden",
+    "img": "vaultwarden.svg",
+    "url": "http://bitwarden.hcps.win/",
+    "status": "killed",
+    "date": "2024-10-07"
+  },
+  {
     "alt": "MeshCentral",
     "img": "meshcentral.png",
     "url": "https://meshcentral.hcps.win/",
