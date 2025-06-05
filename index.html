@@ -53,7 +53,7 @@
             {% assign sorted_tiles = tiles | sort: "date" %}
             {% for tile in sorted_tiles %}
             <a {% if tile.status !="killed" %}href="{{ tile.url }}" {% endif %} class="tile {{ tile.status }}"
-                title="{{ tile.alt }}">
+                title="{{ tile.alt }}&#013;Founded {{ tile.date }}">
                 <img src="assets/img/tiles/{{ tile.img }}" alt="" srcset="">
             </a>
             {% endfor %}

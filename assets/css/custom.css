@@ -209,8 +209,8 @@ a:hover {
     background: radial-gradient(#0002, #0006);
 }
 
-.tile.killed img {
-    filter: blur(2px) saturate(0%);
+.tile.killed:hover {
+    box-shadow: 0 0 10px #900 inset;
 }
 
 .tile.killed::after {
