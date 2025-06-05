@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    justify-items: center;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -21,7 +22,7 @@ body {
 
 .body-content {
     max-width: 1170px;
-    margin: auto;
+    margin: 50px;
     margin-top: 70px;
 }
 
@@ -133,6 +134,7 @@ a:hover {
 }
 
 .tile {
+    position: relative;
     display: inline-block;
     color: #266090;
     width: 150px;
@@ -144,4 +146,33 @@ a:hover {
     background-size: contain;
     margin: 15px;
     text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.tile:hover,
+.tile:focus,
+.tile:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tile::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #26B5A0;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.tile:hover:before,
+.tile:focus:before,
+.tile:active:before {
+    left: 0;
+    right: 0;
+    border-radius: 0 0 5px 5px;
 }
