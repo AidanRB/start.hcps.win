@@ -158,13 +158,13 @@ a:hover {
     object-fit: contain;
 }
 
-.tile:hover,
-.tile:focus,
-.tile:active {
+.tile:link:hover,
+.tile:link:focus,
+.tile:link:active {
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
-.tile::before {
+.tile:link::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -177,9 +177,9 @@ a:hover {
     transition-timing-function: ease-out;
 }
 
-.tile:hover::before,
-.tile:focus::before,
-.tile:active::before {
+.tile:link:hover::before,
+.tile:link:focus::before,
+.tile:link:active::before {
     left: 0;
     right: 0;
 }
@@ -199,12 +199,12 @@ a:hover {
 }
 
 .tile.killed {
-    pointer-events: none;
+    cursor: not-allowed;
+    background: radial-gradient(#0002, #0006);
 }
 
 .tile.killed img {
     filter: blur(2px) saturate(0%);
-    background: radial-gradient(#0002, #0006);
 }
 
 .tile.killed::after {
