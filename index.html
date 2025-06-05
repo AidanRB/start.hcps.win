@@ -51,7 +51,9 @@
 
         <div class="tiles">
             {% for tile in tiles %}
-            <a href="{{ tile.url }}" class="tile" style="background-image: url('assets/img/tiles/{{ tile.img }}')" title="{{ tile.alt }}"></a>
+            <a href="{{ tile.url }}" class="tile {{ tile.status }}" title="{{ tile.alt }}">
+                <img src="assets/img/tiles/{{ tile.img }}" alt="" srcset="">
+            </a>
             {% endfor %}
         </div>
 
@@ -65,7 +67,7 @@
 
         <img src="/assets/img/hcps_small.png" alt="" srcset="">
         <p>
-        © 2025 - <a href="https://github.com/AidanRB/start.hcps.win">me</a>
+            © 2025 - <a href="https://github.com/AidanRB/start.hcps.win">me</a>
         </p>
 
         <div>

@@ -2,7 +2,7 @@ body {
     margin: 0;
     justify-items: center;
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -148,6 +148,13 @@ a:hover {
     text-align: center;
     box-sizing: border-box;
     transition: all .3s;
+    overflow: hidden;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .tile:hover,
@@ -157,7 +164,7 @@ a:hover {
 }
 
 .tile::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     right: 50%;
@@ -169,10 +176,47 @@ a:hover {
     transition-timing-function: ease-out;
 }
 
-.tile:hover:before,
-.tile:focus:before,
-.tile:active:before {
+.tile:hover::before,
+.tile:focus::before,
+.tile:active::before {
     left: 0;
     right: 0;
-    border-radius: 0 0 5px 5px;
+}
+
+.tile.graduated::after {
+    position: absolute;
+    left: -25px;
+    top: -8px;
+    padding: 15px 25px 5px 25px;
+    rotate: -45deg;
+    color: white;
+    background: #7AC143;
+    box-shadow: 0px -5px 4px 5px black;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f19d';
+}
+
+.tile.killed {
+    pointer-events: none;
+}
+
+.tile.killed img {
+    filter: blur(2px) saturate(0%);
+    background: radial-gradient(#0002, #0006);
+}
+
+.tile.killed::after {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    filter: none;
+    padding: 0 60px;
+    position: absolute;
+    content: 'WASTED';
+    font-family: impact;
+    font-size: 25px;
+    text-shadow: 0 0 3px black;
+    color: #f60009;
+    background: linear-gradient(90deg, #0000, #0006, #0008, #0006, #0000);
 }
