@@ -2,50 +2,65 @@
   {
     "alt": "Endpoint Utilities",
     "img": "tools.png",
-    "url": "https://tools.hcps.win/"
+    "url": "https://tools.hcps.win/",
+    "date": "2022-05-26"
   },
   {
     "alt": "Theopenem",
     "img": "toem.png",
     "url": "https://toem.hcps.org/",
-    "status": "graduated"
+    "status": "graduated",
+    "date": "2023-10-19"
   },
   {
     "alt": "CG-100",
     "img": "snowman.png",
-    "url": "https://snowman.hcps.win/"
+    "url": "https://snowman.hcps.win/",
+    "date": "2024-01-12"
   },
   {
     "alt": "Bookstack",
     "img": "bookstack.png",
     "url": "https://bookstack.hcps.org/",
-    "status": "graduated"
+    "status": "graduated",
+    "date": "2024-05-08"
   },
   {
     "alt": "Gitea",
     "img": "gitea.svg",
-    "url": "https://gitea.hcps.win/"
+    "url": "https://gitea.hcps.win/",
+    "date": "2024-04-15"
+  },
+  {
+    "alt": "start.hcps.win",
+    "img": "start.png",
+    "url": "https://github.com/AidanRB/start.hcps.win",
+    "date": "2024-04-16"
   },
   {
     "alt": "Element",
     "img": "element.svg",
     "url": "https://element.hcps.win/",
-    "status": "killed"
+    "status": "killed",
+    "date": "2024-02-17"
   },
   {
     "alt": "Grafana",
     "img": "grafana.png",
     "url": "https://grafana.hcps.org/",
-    "status": "graduated"
+    "status": "graduated",
+    "date": "2024-09-26"
   },
   {
     "alt": "toem-store",
     "img": "store.png",
-    "url": "http://jzkv4y2.hcps.k12.local:5050/"
+    "url": "http://jzkv4y2.hcps.k12.local:5050/",
+    "date": "2024-09-23"
   },
   {
     "alt": "MeshCentral",
     "img": "meshcentral.png",
-    "url": "https://meshcentral.hcps.win/"
+    "url": "https://meshcentral.hcps.win/",
+    "date": "2024-12-10"
   }
 ]

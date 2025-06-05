@@ -50,7 +50,8 @@
         </div>
 
         <div class="tiles">
-            {% for tile in tiles %}
+            {% assign sorted_tiles = tiles | sort: "date" %}
+            {% for tile in sorted_tiles %}
             <a href="{{ tile.url }}" class="tile {{ tile.status }}" title="{{ tile.alt }}">
                 <img src="assets/img/tiles/{{ tile.img }}" alt="" srcset="">
             </a>
