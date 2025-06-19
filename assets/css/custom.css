@@ -220,9 +220,11 @@ a:hover {
     filter: none;
     padding: 0 60px;
     position: absolute;
-    content: 'WASTED';
-    font-family: impact;
-    font-size: 25px;
+    content: 'wasted';
+    height: 35px;
+    font-family: anton, impact, sans serif;
+    font-size: 30px;
+    line-height: 1.2;
     text-shadow: 0 0 3px black;
     color: #f60009;
     background: linear-gradient(90deg, #0000, #0006, #0008, #0006, #0000);
