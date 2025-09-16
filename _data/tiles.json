@@ -67,7 +67,8 @@
   {
     "alt": "MeshCentral",
     "img": "meshcentral.png",
-    "url": "https://meshcentral.hcps.win/",
+    "url": "https://meshcentral.hcps.org/",
+    "status": "graduated",
     "date": "2024-12-10"
   },
   {
