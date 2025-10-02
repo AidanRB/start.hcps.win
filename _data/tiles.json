@@ -28,7 +28,8 @@
   {
     "alt": "Gitea",
     "img": "gitea.svg",
-    "url": "https://gitea.hcps.win/",
+    "url": "https://gitea.hcps.org/",
+    "status": "graduated",
     "date": "2024-04-15"
   },
   {
@@ -74,7 +75,8 @@
   {
     "alt": "LibreNMS",
     "img": "librenms.svg",
-    "url": "https://librenms.hcps.win/",
+    "url": "https://librenms.hcps.org/",
+    "status": "graduated",
     "date": "2025-05-12"
   }
 ]
